@@ -63,11 +63,11 @@ int indexOfMin(int *a, int n) {
   
   int minIdx = 0;
   for (int i = 1; i < n; i++) {
-    if (a[i] < a[maxIdx]) {
-      maxIdx = i;
+    if (a[i] < a[minIdx]) {
+      minIdx = i;
     }
   }
-  return maxIdx;
+  return minIdx;
 }
 
 // swap
